@@ -1,61 +1,228 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+  /* Estilos generales */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8d7d7;
+    color: #333333;
     margin: 0;
     padding: 0;
+    border: #333333 solid 30px;
   }
   
   /* Estilos del encabezado */
   header {
-    background-color: #333;
+    background-color: #FFC0CB;
     padding: 20px;
-    color: #fff;
     text-align: center;
   }
   
-  /* Estilos de la barra de navegación */
-  nav {
-    background-color: #007bff;
+  header h1 {
+    font-size: 48px;
+    color: #FF1493;
+    margin: 0;
+  }
+
+  header img {
+    width: 250px;
+    height: auto;
+    border-radius: 55%;
   }
   
   nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+    margin: 10px;
   }
   
   nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    display: inline;
+    margin: 0 10px 0 10px;
     padding: 10px;
   }
   
+  nav ul li a {
+    background-color: #f8d7d7;
+    color: #FF1493;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+  
   nav ul li a:hover {
-    background-color: #fff;
-    color: #007bff;
+    background-color: #FF1493;
+    color: #f8d7d7;
   }
   
   /* Estilos de las secciones */
   section {
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 40px 20px;
   }
   
   section h2 {
+    color: #FF1493;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  section p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  #about {
+    background-color: #333333;
+    color: #FFC0CB;
+  }
+  
+  /* Estilos de los proyectos */
+
+  #projects {
+
+  }
+
+  #projects h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .project-list li {
+    background-color: #FFC0CB;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #FF1493;
+  }
+  
+  .project-list h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .project-list p {
+    margin-bottom: 15px;
+  }
+  
+  .project-list a {
+    display: block;
+    margin-bottom: 10px;
     color: #007bff;
   }
   
-  /* Estilos del pie de página */
-  footer {
-    background-color: #333;
-    padding: 10px;
-    color: #fff;
+  .project-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos de las habilidades */
+  #skills {
+    background-color: #333333;
+  }
+
+  #skills ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     text-align: center;
   }
   
+  #skills li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #FFC0CB;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #FF1493;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #skills li:hover {
+    background-color: #FF1493;
+    color:#f8d7d7
+  }
+
+  .social-icons {
+
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Estilos para la sección de contacto */
+  #contact {
+    background-color: #f8d7d7;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FF1493;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icons a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  #contact ul {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  #contact ul li {
+    margin:0 20px 0 20px ;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .icons-email-phone img{
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Estilos del pie de página */
+  footer {
+    background-color: #333333;
+    padding:  20px;
+    text-align: center;
+    font-size: 14px;
+    color: #FF1493;
+  }
+
+  footer nav {
+    margin: 10px;
+  }
+  
+  footer p {
+    padding-top: 10px;
+  }
